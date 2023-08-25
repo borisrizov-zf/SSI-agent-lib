@@ -1,4 +1,5 @@
-@startuml Create and parse DID
+@startuml
+title Create and parse DID
 interface DidFactory {
     Did : create(DidMethod method, DidMethodOptions options)
 }
@@ -24,4 +25,4 @@ class DidDocument {
 }
 DidWebFactory --> Did : creates
 Did --> DidDocument : relates to
-@endml
+@enduml
